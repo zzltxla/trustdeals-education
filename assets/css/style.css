@@ -532,6 +532,15 @@ footer {
         }
         
     }
+    .contact {
+        span {
+            &:first-child {
+                &:before {
+                    left: 48%;
+                }
+            }
+        }
+    }
 }
 
 .office, .contact {
@@ -541,18 +550,22 @@ footer {
 
 .contact {
     border: none;
-
+    align-items: start;
+    justify-content: start;
     span {
         &:first-child {
             visibility: hidden;
+
             text-indent: -90%;
+
             position: relative;
             &:before {
                 content: url(/assets/image/icons/linkedin.svg);
                 visibility: visible;
+
                 position: absolute;
                 top: 0;
-                left: 50%;
+                left: 38%;
             }
             &:hover {
                 cursor: pointer;
@@ -560,11 +573,14 @@ footer {
         }
         &:last-child {
             visibility: hidden;
+
             text-indent: -90%;
+
             position: relative;
             &:before {
                 content: url(/assets/image/icons/envelope.svg);
                 visibility: visible;
+
                 position: absolute;
                 top: 0;
                 left: 25%;
